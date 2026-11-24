@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/css/main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="page">
+        <header class="hero">
+            <h1 class="title">Найдите кадр</h1>
+            <p class="subtitle">Миллионы свободных фотографий. Введите слово и нажмите Enter.</p>
+        </header>
+
+        <form class="search" role="search" autocomplete="off">
+            <label class="visually-hidden" for="q">Поиск изображений</label>
+            <input id="q" class="input" name="text" type="search" placeholder="Например: горы, океан, город" required />
+            <button class="btn" type="submit">Найти</button>
+        </form>
+
+        <div class="mode" role="radiogroup" aria-label="Тип контента">
+            <label class="mode__item"><input type="radio" name="mode" value="photo" checked><span>Фото</span></label>
+            <label class="mode__item"><input type="radio" name="mode" value="video"><span>Видео</span></label>
+        </div>
+
+        <div class="chips" aria-label="Популярные запросы">
+            <button class="chip" type="button">природа</button>
+            <button class="chip" type="button">архитектура</button>
+            <button class="chip" type="button">море</button>
+            <button class="chip" type="button">кофе</button>
+            <button class="chip" type="button">космос</button>
+        </div>
+
+        <p class="status" aria-live="polite"></p>
+        <section class="gallery" aria-label="Результаты"></section>
+    </main>
+
+
+
+    <script src="/src/assets/js/main.js"></script>
+</body>
+
+</html>
