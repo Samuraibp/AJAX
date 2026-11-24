@@ -170,7 +170,6 @@ body {
     outline-offset: -3px;
 }
 
-/* Подсказки */
 .chips {
     display: flex;
     flex-wrap: wrap;
@@ -259,7 +258,6 @@ body {
     opacity: 1;
 }
 
-/* Загрузка */
 .skeleton {
     flex: 1 1 260px;
     height: 280px;
